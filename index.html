@@ -9,10 +9,6 @@
 </head>
 
 <body>
-  <audio autoplay loop>
-    <source src="fm/Tarot Woman.mp3" type="audio/mp3">
-    Seu navegador não suporta a TAG audio.
-  </audio>
   <header>
     <div class="wrapper">
       <h1>Feira Caveiras from Hell  </h1>
@@ -21,6 +17,7 @@
           <li><a href="#">Home</a></li>
           <li><a href="#quemsomos">Quem Somos</a></li>
           <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#player">Rádio</a></li>
           <li><a href="#artistas">Artistas</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#localizacao">Localização</a></li>
@@ -34,7 +31,11 @@
   
 
   <section id="conteudo-principal">
+    <section id="imagem">
+      <img class="imagem" src="./image/feira capa.jpg" />
+    </section>
     <section id="quemsomos" class="lista">
+      <br />
       <h3>Quem Somos</h3>
       <div class="wrapper">
         <article>
@@ -44,26 +45,82 @@
         </article>
       </div>
     </section>
+    <section id="player">
+      <h3> RÁDIO DA FEIRA </h3>
+      <article class="player">
+        <audio id="audioPlayer" autoplay loop>
+          <source src="fm/Chocolate Girl.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <div id="playerBar">
+          <span class="now-playing">Tocando agora:</span>
+          <span id="currentTrack">Chocolate Girl</span>
+          </br>
+          </br>
+          <button class="button-1" onclick="previous()">Anterior</button>
+          <button class="button-1" onclick="togglePlayPause()">Play/Pause</button>
+          <button class="button-1" onclick="next()">Próximo</button>
+        </div>
+        <script>
+          var audio = document.getElementById("audioPlayer");
+          var playlist = [
+            "fm/Chocolate Girl.mp3",
+            "fm/In The Flesh.mp3",
+            "fm/Tarot Woman.mp3"
+          ];
+          var currentIndex = 0;
+          var isPlaying = true;
+          function togglePlayPause() {
+            if (isPlaying) {
+              audio.pause();
+              isPlaying = false;
+            } else {
+              audio.play();
+              isPlaying = true;
+            }
+          }
+          function previous() {
+            currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+            changeTrack();
+          }
+          function next() {
+            currentIndex = (currentIndex + 1) % playlist.length;
+            changeTrack();
+          }
+          function changeTrack() {
+            audio.src = playlist[currentIndex];
+            audio.play();
+            document.getElementById("currentTrack").textContent = getTrackName(playlist[currentIndex]);
+          }
+          function getTrackName(url) {
+            return url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
+          }
+        </script>
+      </article>
+    </section>
     <section id="produtos" class="lista">
       <br />
       <h3>Nossos Produtos</h3>
       <div class="wrapper">
         <ul>
           <li class="utsupsgh">
-            <h5>Greatest Shits     $20</h5>
+            <h5>Greatest Shits</h5>
+            <h4>R$20</h4>
           </li>
           <li class="pfthewall">
-            <h5>The Wall     $10</h5>
+            <h5>The Wall</h5>
+            <h4>R$10</h4>
           </li>
           <li class="rainbowrising">
-            <h5>Rising        $10</h5>
+            <h5>Rising</h5>
+            <h4>R$10</h4>
           </li>
           <div class="clear"></div>
         </ul>
       </div>
     </section>
     <section id="artistas" class="lista">
-      <br />
+    </br>
       <h3>Artistas</h3>
       <div class="wrapper">
         <ul>
