@@ -1,0 +1,430 @@
+body {
+  color: white; /* Altera a cor da fonte para branco */
+  font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  background-color: black; /* Altera o fundo para a cor preta */
+}
+
+p {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  color: white; /* Altera a cor da fonte para branco */
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+h2 {
+  /* font-weight: 250px; */
+  color: white; /* Altera a cor da fonte para branco */
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 30px;
+  color: white; /* Altera a cor da fonte para branco */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  color: white; /* Altera a cor da fonte para branco */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 15px;
+  color: white; /* Altera a cor da fonte para branco */
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Altera a cor da fonte para branco */
+}
+
+a:hover {
+  color: red;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 13px;
+  color: white; /* Altera a cor da fonte para branco */
+  font-style: italic;
+}
+
+.clear {
+  clear: both;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1024px;
+}
+
+header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  background-color: black; /* Altera o fundo para a cor preta */
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+header h1 {
+  float: left;
+}
+
+header h1 .color {
+  color: red;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li {
+  float: center;
+  display: inline-table;
+  margin-top: 13px;
+}
+
+header nav ul li a {
+  color: white; /* Altera a cor da fonte para branco */
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin-right: 2px;
+}
+
+#image-principal {
+  height: 300px;
+  padding-top: 1px;
+}
+
+#image-principal div h2 {
+  margin: 250px 0 5px 0;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.button-1 {
+  display: block;
+  text-align: center;
+  background: #444;
+  border-radius: 3px;
+  color: white; /* Altera a cor da fonte para branco */
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+.button-1:hover {
+  background-color: red;
+  color: white; /* Altera a cor da fonte para branco */
+}
+
+.lista ul {
+  margin: 20px 0;
+}
+
+.lista ul li {
+  width: 300px;
+  padding-top: 200px;
+  float: left;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.lista ul li.utsup {
+  background: url('image/feirantes/utsup.png') no-repeat top center;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.lista ul li.pink-floyd {
+  background: url('image/feirantes/pinkfloyd.png') no-repeat top center;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.lista ul li.rainbow {
+  background: url('image/feirantes/rainbow.png') no-repeat top center;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.lista ul li.lily {
+  background: url('image/depoimentos/Lily.jpg') no-repeat top center;
+  padding-top: 160px;
+  margin-left: 350px;
+}
+
+.lista ul li.caio {
+  background: url('image/depoimentos/caio.png') no-repeat top center;
+  padding-top: 160px;
+  margin-left: 350px;
+}
+
+.lista ul li.alice {
+  background: url('image/depoimentos/Alice.jpg') no-repeat top center;
+  padding-top: 160px;
+  margin-left: 350px;
+}
+
+.lista ul li.lily,
+.lista ul li.caio,
+.lista ul li.alice {
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 160px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.lista ul li.utsupsgh {
+  background: url('image/produtos/greatest shits.jpg') no-repeat top center;
+  padding-top: 150px;
+}
+
+.lista ul li.pfthewall {
+  background: url('image/produtos/thewall.jpg') no-repeat top center;
+  padding-top: 150px;
+}
+
+.lista ul li.rainbowrising {
+  background: url('image/produtos/rising.jpg') no-repeat top center;
+  padding-top: 150px;
+}
+
+#conteudo-principal {
+  background-color: black; /* Altera o fundo para a cor preta */
+  color: white; /* Altera a cor da fonte para branco */
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 60px;
+  
+}
+
+#conteudo-principal h3 {
+  display: block;
+  margin: 60px auto 20px auto;
+  width: 1050px;
+  border-bottom: 1px solid red;
+  padding: 0 0 20px 0;
+}
+
+#conteudo-principal a img {
+  margin: 20px 0;
+}
+
+#secondary-content {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#secondary-content article {
+  width: 460px;
+  height: 270px;
+  float: left;
+  background-color: #f5f5f5;
+}
+
+#secondary-content article:first-child {
+  margin-right: 20px;
+}
+
+#secondary-content article .overlay {
+  background: rgba(255, 255, 255, .95);
+  height: 230px;
+  width: 190px;
+  padding: 20px;
+}
+
+article h4 {
+  border-bottom: 1px solid red;
+  padding-bottom: 20px;
+}
+
+.more-link {
+  border: 1px solid red;
+  color: red;
+  padding: 6px 20px;
+  border-radius: 3px;
+}
+
+.more-link:hover {
+  background-color: red;
+  color: white; /* Altera a cor da fonte para branco */
+}
+
+#cta {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#cta h3 {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 400px;
+  border-bottom: 1px solid red;
+  padding: 0 0 20px 0;
+}
+
+.button-2 {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid red;
+  color: red;
+  border-radius: 3px;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.button-2:hover {
+  background-color: red;
+  color: white; /* Altera a cor da fonte para branco */
+}
+
+footer {
+  height: 150px;
+  padding: 20px 0;
+
+}
+
+#info-rodape {
+  width: 380px;
+  float: left;
+  margin-top: 10px;
+}
+
+#links-rodape {
+  width: 520px;
+  float: right;
+}
+
+#links-rodape ul {
+  width: 150px;
+  float: left;
+  margin-left: 20px;
+}
+
+#links-rodape ul li {
+  margin: 10px 0;
+}
+
+/*table style*/
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+th {
+  font-weight: bold;
+}
+
+td,
+th {
+  padding-left: 8px;
+}
+
+thead tr {
+  height: 60px;
+  background: #FFED86;
+  font-size: 16px;
+}
+
+tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #E3F1D5;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+#localizacao {
+  text-align: center;
+}
+
+#quemsomos {
+  text-align: left;
+}
+
+#info-rodape {
+  text-align: center;
+}
+
+#depoimentos ul {
+  display: flex;
+  flex-direction:row ;
+}
+
+#credenciamento form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#credenciamento label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#credenciamento input[type="text"],
+#credenciamento input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#credenciamento textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#credenciamento button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#credenciamento button[type="submit"]:hover {
+  background-color: #45a049;
+}
